@@ -20,6 +20,8 @@
 				<Item Name="Get Module Execution Status Argument--cluster.ctl" Type="VI" URL="../Get Module Execution Status Argument--cluster.ctl"/>
 				<Item Name="Initialize Session Argument--cluster.ctl" Type="VI" URL="../Initialize Session Argument--cluster.ctl"/>
 				<Item Name="Initialize Session (Reply Payload)--cluster.ctl" Type="VI" URL="../Initialize Session (Reply Payload)--cluster.ctl"/>
+				<Item Name="Close Session Argument--cluster.ctl" Type="VI" URL="../Close Session Argument--cluster.ctl"/>
+				<Item Name="Close Session (Reply Payload)--cluster.ctl" Type="VI" URL="../Close Session (Reply Payload)--cluster.ctl"/>
 			</Item>
 			<Item Name="Broadcast" Type="Folder">
 				<Item Name="Did Init Argument--cluster.ctl" Type="VI" URL="../Did Init Argument--cluster.ctl"/>
@@ -33,6 +35,7 @@
 			<Item Name="Stop Module.vi" Type="VI" URL="../Stop Module.vi"/>
 			<Item Name="Show Diagram.vi" Type="VI" URL="../Show Diagram.vi"/>
 			<Item Name="Initialize Session.vi" Type="VI" URL="../Initialize Session.vi"/>
+			<Item Name="Close Session.vi" Type="VI" URL="../Close Session.vi"/>
 		</Item>
 		<Item Name="Start Module.vi" Type="VI" URL="../Start Module.vi"/>
 		<Item Name="Synchronize Module Events.vi" Type="VI" URL="../Synchronize Module Events.vi"/>
@@ -64,7 +67,9 @@
 		<Item Name="Module Specific" Type="Folder">
 			<Item Name="Instanciate SessionOptions.vi" Type="VI" URL="../Instanciate SessionOptions.vi"/>
 			<Item Name="Open Session.vi" Type="VI" URL="../Open Session.vi"/>
+			<Item Name="Session Ref.ctl" Type="VI" URL="../Session Ref.ctl"/>
 			<Item Name="SessionOptions Ref.ctl" Type="VI" URL="../SessionOptions Ref.ctl"/>
+			<Item Name="Close and Clean Session.vi" Type="VI" URL="../Close and Clean Session.vi"/>
 		</Item>
 		<Item Name="Close Module.vi" Type="VI" URL="../Close Module.vi"/>
 		<Item Name="Handle Exit.vi" Type="VI" URL="../Handle Exit.vi"/>
