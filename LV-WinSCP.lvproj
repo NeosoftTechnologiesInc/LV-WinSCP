@@ -13,6 +13,9 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Classes" Type="Folder">
 			<Item Name="SessionOptions" Type="Folder">
+				<Item Name="SCP" Type="Folder">
+					<Item Name="SessionOptions-SCP.lvclass" Type="LVClass" URL="../Classes/SessionOptions/SCP/SessionOptions-SCP.lvclass"/>
+				</Item>
 				<Item Name="SessionOptions.lvclass" Type="LVClass" URL="../Classes/SessionOptions/SessionOptions.lvclass"/>
 			</Item>
 		</Item>
@@ -22,6 +25,7 @@
 		<Item Name="Testers" Type="Folder">
 			<Item Name="Test LV-WinSCP API.vi" Type="VI" URL="../Libraries/LV-WinSCP/Test LV-WinSCP API.vi"/>
 		</Item>
+		<Item Name="Test-RawAssemblyCalls.vi" Type="VI" URL="../Tests/AssemblyTests/Test-RawAssemblyCalls.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
@@ -91,6 +95,7 @@
 				<Item Name="Wait at Rendezvous.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/rendezvs.llb/Wait at Rendezvous.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="WinSCPnet.dll" Type="Document" URL="../../../../../../Program Files (x86)/WinSCP/WinSCPnet.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
