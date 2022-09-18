@@ -25,7 +25,6 @@
 		<Item Name="Testers" Type="Folder">
 			<Item Name="Test LV-WinSCP API.vi" Type="VI" URL="../Libraries/LV-WinSCP/Test LV-WinSCP API.vi"/>
 		</Item>
-		<Item Name="Session Ref.ctl" Type="VI" URL="../Libraries/LV-WinSCP/Session Ref.ctl"/>
 		<Item Name="Test-RawAssemblyCalls.vi" Type="VI" URL="../Tests/AssemblyTests/Test-RawAssemblyCalls.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
