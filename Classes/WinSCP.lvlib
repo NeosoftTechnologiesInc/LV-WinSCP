@@ -5,6 +5,18 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="Classes" Type="Folder">
+		<Item Name="FileTransfer" Type="Folder">
+			<Item Name="TransferFiles" Type="Folder">
+				<Item Name="TransferFiles.lvclass" Type="LVClass" URL="../FileTransfer/TransferFiles/TransferFiles.lvclass"/>
+			</Item>
+			<Item Name="TransferFolder" Type="Folder">
+				<Item Name="TransferFolder.lvclass" Type="LVClass" URL="../FileTransfer/TransferFolder/TransferFolder.lvclass"/>
+			</Item>
+			<Item Name="FileTransfer.lvclass" Type="LVClass" URL="../FileTransfer/FileTransfer.lvclass"/>
+		</Item>
+		<Item Name="FileTransferOptions" Type="Folder">
+			<Item Name="FileTransferOptions.lvclass" Type="LVClass" URL="../FileTransferOptions/FileTransferOptions.lvclass"/>
+		</Item>
 		<Item Name="Session" Type="Folder">
 			<Item Name="Session.lvclass" Type="LVClass" URL="../Session/Session.lvclass"/>
 		</Item>
