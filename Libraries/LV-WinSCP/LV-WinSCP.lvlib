@@ -67,8 +67,6 @@
 		<Item Name="Module Specific" Type="Folder">
 			<Item Name="Instanciate SessionOptions.vi" Type="VI" URL="../Instanciate SessionOptions.vi"/>
 			<Item Name="Open Session.vi" Type="VI" URL="../Open Session.vi"/>
-			<Item Name="Session Ref.ctl" Type="VI" URL="../Session Ref.ctl"/>
-			<Item Name="SessionOptions Ref.ctl" Type="VI" URL="../SessionOptions Ref.ctl"/>
 			<Item Name="Close and Clean Session.vi" Type="VI" URL="../Close and Clean Session.vi"/>
 		</Item>
 		<Item Name="Close Module.vi" Type="VI" URL="../Close Module.vi"/>
