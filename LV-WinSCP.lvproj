@@ -2,6 +2,7 @@
 <Project Type="Project" LVVersion="15008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="My Computer" Type="My Computer">
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -11,22 +12,14 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Classes" Type="Folder">
-			<Item Name="Session" Type="Folder">
-				<Item Name="Session.lvclass" Type="LVClass" URL="../Classes/Session/Session.lvclass"/>
-			</Item>
-			<Item Name="SessionOptions" Type="Folder">
-				<Item Name="SCP" Type="Folder">
-					<Item Name="SessionOptions-SCP.lvclass" Type="LVClass" URL="../Classes/SessionOptions/SCP/SessionOptions-SCP.lvclass"/>
-				</Item>
-				<Item Name="SessionOptions.lvclass" Type="LVClass" URL="../Classes/SessionOptions/SessionOptions.lvclass"/>
-			</Item>
-		</Item>
 		<Item Name="Modules" Type="Folder">
 			<Item Name="LV-WinSCP.lvlib" Type="Library" URL="../Libraries/LV-WinSCP/LV-WinSCP.lvlib"/>
 		</Item>
 		<Item Name="Testers" Type="Folder">
 			<Item Name="Test LV-WinSCP API.vi" Type="VI" URL="../Libraries/LV-WinSCP/Test LV-WinSCP API.vi"/>
+		</Item>
+		<Item Name="Base Lib" Type="Folder">
+			<Item Name="WinSCP.lvlib" Type="Library" URL="../Classes/WinSCP.lvlib"/>
 		</Item>
 		<Item Name="Test-RawAssemblyCalls.vi" Type="VI" URL="../Tests/AssemblyTests/Test-RawAssemblyCalls.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
