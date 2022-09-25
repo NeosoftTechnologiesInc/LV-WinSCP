@@ -12,6 +12,9 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Classes" Type="Folder">
+			<Item Name="Session" Type="Folder">
+				<Item Name="Session.lvclass" Type="LVClass" URL="../Classes/Session/Session.lvclass"/>
+			</Item>
 			<Item Name="SessionOptions" Type="Folder">
 				<Item Name="SCP" Type="Folder">
 					<Item Name="SessionOptions-SCP.lvclass" Type="LVClass" URL="../Classes/SessionOptions/SCP/SessionOptions-SCP.lvclass"/>
