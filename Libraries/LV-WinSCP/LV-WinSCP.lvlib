@@ -22,6 +22,8 @@
 				<Item Name="Initialize Session (Reply Payload)--cluster.ctl" Type="VI" URL="../Initialize Session (Reply Payload)--cluster.ctl"/>
 				<Item Name="Close Session Argument--cluster.ctl" Type="VI" URL="../Close Session Argument--cluster.ctl"/>
 				<Item Name="Close Session (Reply Payload)--cluster.ctl" Type="VI" URL="../Close Session (Reply Payload)--cluster.ctl"/>
+				<Item Name="List Directory Argument--cluster.ctl" Type="VI" URL="../List Directory Argument--cluster.ctl"/>
+				<Item Name="List Directory (Reply Payload)--cluster.ctl" Type="VI" URL="../List Directory (Reply Payload)--cluster.ctl"/>
 			</Item>
 			<Item Name="Broadcast" Type="Folder">
 				<Item Name="Did Init Argument--cluster.ctl" Type="VI" URL="../Did Init Argument--cluster.ctl"/>
@@ -36,6 +38,7 @@
 			<Item Name="Show Diagram.vi" Type="VI" URL="../Show Diagram.vi"/>
 			<Item Name="Initialize Session.vi" Type="VI" URL="../Initialize Session.vi"/>
 			<Item Name="Close Session.vi" Type="VI" URL="../Close Session.vi"/>
+			<Item Name="List Directory.vi" Type="VI" URL="../List Directory.vi"/>
 		</Item>
 		<Item Name="Start Module.vi" Type="VI" URL="../Start Module.vi"/>
 		<Item Name="Synchronize Module Events.vi" Type="VI" URL="../Synchronize Module Events.vi"/>
