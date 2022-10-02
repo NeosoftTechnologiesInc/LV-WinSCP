@@ -5,6 +5,9 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="Classes" Type="Folder">
+		<Item Name="Command Execution" Type="Folder">
+			<Item Name="Command Execution.lvclass" Type="LVClass" URL="../CommandExecution/Command Execution.lvclass"/>
+		</Item>
 		<Item Name="FileTransfer" Type="Folder">
 			<Item Name="TransferFiles" Type="Folder">
 				<Item Name="TransferFiles.lvclass" Type="LVClass" URL="../FileTransfer/TransferFiles/TransferFiles.lvclass"/>
