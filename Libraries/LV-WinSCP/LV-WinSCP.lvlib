@@ -27,6 +27,8 @@
 				<Item Name="List Directory (Reply Payload)--cluster.ctl" Type="VI" URL="../List Directory (Reply Payload)--cluster.ctl"/>
 				<Item Name="Get Items From Target Argument--cluster.ctl" Type="VI" URL="../Get Items From Target Argument--cluster.ctl"/>
 				<Item Name="Get Items From Target (Reply Payload)--cluster.ctl" Type="VI" URL="../Get Items From Target (Reply Payload)--cluster.ctl"/>
+				<Item Name="Execute Command On Target Argument--cluster.ctl" Type="VI" URL="../Execute Command On Target Argument--cluster.ctl"/>
+				<Item Name="Execute Command On Target (Reply Payload)--cluster.ctl" Type="VI" URL="../Execute Command On Target (Reply Payload)--cluster.ctl"/>
 			</Item>
 			<Item Name="Broadcast" Type="Folder">
 				<Item Name="Did Init Argument--cluster.ctl" Type="VI" URL="../Did Init Argument--cluster.ctl"/>
@@ -43,6 +45,7 @@
 			<Item Name="Close Session.vi" Type="VI" URL="../Close Session.vi"/>
 			<Item Name="List Directory.vi" Type="VI" URL="../List Directory.vi"/>
 			<Item Name="Get Items From Target.vi" Type="VI" URL="../Get Items From Target.vi"/>
+			<Item Name="Execute Command On Target.vi" Type="VI" URL="../Execute Command On Target.vi"/>
 		</Item>
 		<Item Name="Typedefs" Type="Folder">
 			<Item Name="Transfer Type.ctl" Type="VI" URL="../Transfer Type.ctl"/>
@@ -64,6 +67,7 @@
 		<Item Name="Module Did Stop.vi" Type="VI" URL="../Module Did Stop.vi"/>
 		<Item Name="Update Module Execution Status.vi" Type="VI" URL="../Update Module Execution Status.vi"/>
 		<Item Name="Transfer From Target Status.vi" Type="VI" URL="../Transfer From Target Status.vi"/>
+		<Item Name="Command Execution Response.vi" Type="VI" URL="../Command Execution Response.vi"/>
 	</Item>
 	<Item Name="Requests" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
