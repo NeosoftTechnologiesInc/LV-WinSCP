@@ -10,10 +10,15 @@
 		</Item>
 		<Item Name="FileTransfer" Type="Folder">
 			<Item Name="TransferFiles" Type="Folder">
-				<Item Name="TransferFiles-Get.lvclass" Type="LVClass" URL="../FileTransfer/TransferFiles/TransferFiles-Get.lvclass"/>
+				<Item Name="Get" Type="Folder">
+					<Item Name="TransferFiles-Get.lvclass" Type="LVClass" URL="../FileTransfer/TransferFiles-Get/TransferFiles-Get.lvclass"/>
+				</Item>
+				<Item Name="Put" Type="Folder"/>
 			</Item>
 			<Item Name="TransferFolder" Type="Folder">
-				<Item Name="TransferFolder-Get.lvclass" Type="LVClass" URL="../FileTransfer/TransferFolder/TransferFolder-Get.lvclass"/>
+				<Item Name="Get" Type="Folder">
+					<Item Name="TransferFolder-Get.lvclass" Type="LVClass" URL="../FileTransfer/TransferFolder-Get/TransferFolder-Get.lvclass"/>
+				</Item>
 			</Item>
 			<Item Name="FileTransfer.lvclass" Type="LVClass" URL="../FileTransfer/FileTransfer.lvclass"/>
 		</Item>
