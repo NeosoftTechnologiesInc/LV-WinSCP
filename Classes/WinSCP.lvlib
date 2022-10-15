@@ -13,7 +13,9 @@
 				<Item Name="Get" Type="Folder">
 					<Item Name="TransferFiles-Get.lvclass" Type="LVClass" URL="../FileTransfer/TransferFiles-Get/TransferFiles-Get.lvclass"/>
 				</Item>
-				<Item Name="Put" Type="Folder"/>
+				<Item Name="Put" Type="Folder">
+					<Item Name="TranferFiles-Put.lvclass" Type="LVClass" URL="../FileTransfer/TransferFiles-Put/TranferFiles-Put.lvclass"/>
+				</Item>
 			</Item>
 			<Item Name="TransferFolder" Type="Folder">
 				<Item Name="Get" Type="Folder">
