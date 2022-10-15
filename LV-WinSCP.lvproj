@@ -94,6 +94,7 @@
 			</Item>
 			<Item Name="WinSCPnet.dll" Type="Document" URL="../../../../../../Program Files (x86)/WinSCP/WinSCPnet.dll"/>
 			<Item Name="TransferFiles-Get.lvclass" Type="LVClass" URL="../Classes/FileTransfer/TransferFiles/TransferFiles-Get.lvclass"/>
+			<Item Name="TransferFolder-Get.lvclass" Type="LVClass" URL="../Classes/FileTransfer/TransferFolder/TransferFolder-Get.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
