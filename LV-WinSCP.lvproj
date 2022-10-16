@@ -21,6 +21,10 @@
 		<Item Name="Base Lib" Type="Folder">
 			<Item Name="WinSCP.lvlib" Type="Library" URL="../Classes/WinSCP.lvlib"/>
 		</Item>
+		<Item Name="Bin WinSCP" Type="Folder">
+			<Item Name="WinSCP.exe" Type="Document" URL="../Bin WinSCP/WinSCP.exe"/>
+			<Item Name="WinSCPnet.dll" Type="Document" URL="../Bin WinSCP/WinSCPnet.dll"/>
+		</Item>
 		<Item Name="Test-RawAssemblyCalls.vi" Type="VI" URL="../Tests/AssemblyTests/Test-RawAssemblyCalls.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
