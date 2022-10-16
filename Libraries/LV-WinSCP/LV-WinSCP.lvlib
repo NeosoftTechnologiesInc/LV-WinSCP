@@ -87,7 +87,8 @@
 			<Item Name="Instanciate SessionOptions.vi" Type="VI" URL="../Instanciate SessionOptions.vi"/>
 			<Item Name="Open Session.vi" Type="VI" URL="../Open Session.vi"/>
 			<Item Name="Close and Clean Session.vi" Type="VI" URL="../Close and Clean Session.vi"/>
-			<Item Name="Transfer Item - File Transfer Factory.vi" Type="VI" URL="../Transfer Item - File Transfer Factory.vi"/>
+			<Item Name="Transfer Item - File Transfer Factory - Put.vi" Type="VI" URL="../Transfer Item - File Transfer Factory - Put.vi"/>
+			<Item Name="Transfer Item - File Transfer Factory - Get.vi" Type="VI" URL="../Transfer Item - File Transfer Factory - Get.vi"/>
 		</Item>
 		<Item Name="Close Module.vi" Type="VI" URL="../Close Module.vi"/>
 		<Item Name="Handle Exit.vi" Type="VI" URL="../Handle Exit.vi"/>
