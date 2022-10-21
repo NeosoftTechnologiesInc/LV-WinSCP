@@ -25,6 +25,7 @@
 			<Item Name="WinSCP.exe" Type="Document" URL="../Bin WinSCP/WinSCP.exe"/>
 			<Item Name="WinSCPnet.dll" Type="Document" URL="../Bin WinSCP/WinSCPnet.dll"/>
 		</Item>
+		<Item Name="VIP" Type="Folder"/>
 		<Item Name="Test-RawAssemblyCalls.vi" Type="VI" URL="../Tests/AssemblyTests/Test-RawAssemblyCalls.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -96,7 +97,6 @@
 				<Item Name="Wait at Rendezvous.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/rendezvs.llb/Wait at Rendezvous.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="WinSCPnet.dll" Type="Document" URL="../../../../../../Program Files (x86)/WinSCP/WinSCPnet.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
