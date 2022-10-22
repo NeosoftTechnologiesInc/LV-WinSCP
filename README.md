@@ -1,92 +1,86 @@
 # LV-WinSCP
 
+This project is a LabVIEW wrapper on top of the WinSCP .NET API.
 
-
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://gitlab.com/cgambini/lv-winscp.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://gitlab.com/cgambini/lv-winscp/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
+The source code is written in LabVIEW  2015 32-bit and exposes a DQMH API and a low-level API.
 
 ## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+This LabVIEW toolkit relies on a WinSCP.exe (v5.21 32-bit) and its related .NET API.
+*These two components are embedded next to the source code and do not need to be installed separately.*
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+It mainly allows sending files to a distant target or getting files from it.
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+It also exposes methods to list files into directories and to execute **non-blocking** commands on the distant target.
+
+At this moment, the toolkit only allows connecting distant targets through SCP.
+Also, all actions are synchronous and will only return when done.
 
 ## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+The project is autonomous and the source can be pulled and used as is.
+
+To implement new features in the DQMH module, DQMH 6.1 must be installed on the development PC.
+
+The wrapper can also be installed thanks to a VIP package available on VIPM (see [https:// VIPM.io](https:// VIPM.io)). It will create a LabVIEW palette under Neosoft Technologies subsection. From there, the DQMH and low-level APIs will be available.
 
 ## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+This LabVIEW toolkit can be used to :
+
+* Transfer files between a PC and a distant target
+* Execute commands on a target exposing a SSH Shell.
 
 ## Support
 Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
 
 ## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+Next steps :
+
+1. Implement asynchronous transfers
+
+2. Support FTP
+
+3. Support SFTP
+
+4. Support Amazon S3
 
 ## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+Any contribution is welcomed as long as these rules are respected :
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+1. Any new 'action' on files or distant target must be accessible from the Session class and from a DQMH request.
+2. If a DQMH event is added, the tester must be updated to reflect how the addition should be used.
+3. All new DQMH events must be a broadcast or a Round trip (unless the time to perform the action is very well know, deterministic and below the module timeout ; in this case a 'Request and Reply' event might be accepted)
+4. Ensure that DQMH best practices are respected : https://wiki.dqmh.org/dqmh/documentation/dqmh_best_practices
+5. Documentation of VIs must be correctly filled and explain the purpose of each VIs created.
 
 ## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+### Contributors 
+
+* Cyril Gambini - Neosoft Technologies - https://www.buymeacoffee.com/cyrilg
+* Brice Freund - Neosoft Technologies
+
+### Open source projects
+
+* WinSCP .NET API : 
+* DQMH - https://dqmh.org
 
 ## License
-For open source projects, say how it is licensed.
+This project is built under BSD-3 license.
+
+Copyright (c) 2022, Neosoft Technologies 
+All rights reserved. 
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 
+
+ * Redistributions of source code must retain the above copyright notice, 
+   this list of conditions and the following disclaimer. 
+ * Redistributions in binary form must reproduce the above copyright 
+   notice, this list of conditions and the following disclaimer in the 
+   documentation and/or other materials provided with the distribution. 
+ * Neither the name of Neosoft Technologies nor the names of its 
+   contributors may be used to endorse or promote products derived from 
+   this software without specific prior written permission. 
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
 
 ## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+This project is mainly maintained by Neosoft Technologies (www.neosoft.ca) and is used in several commercial projects. Any help ugrading and maintaining this library is welcomed !
