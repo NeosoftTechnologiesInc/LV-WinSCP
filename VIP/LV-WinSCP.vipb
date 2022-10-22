@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2022-10-21 17:10:13" Modified_Date="2022-10-22 16:16:17" Creator="VMCG" Comments="" ID="e1b073f80dfe5193b8f45314e995a120">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2022-10-21 17:10:13" Modified_Date="2022-10-22 18:41:44" Creator="VMCG" Comments="" ID="4cece3d47fc7c9b3126d33738a1b6777">
   <Library_General_Settings>
     <Package_File_Name>Neosoft_Technologies_LV_WinSCP</Package_File_Name>
-    <Library_Version>1.0.0.2</Library_Version>
+    <Library_Version>1.0.0.4</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..</Library_Source_Folder>
     <Library_Output_Folder>..\..\output\lv-winscp</Library_Output_Folder>
@@ -35,7 +35,7 @@ The DQMH module can be used as the principal API to WinSCP.
 For more specific controle of the API, low level classes can also be used to program a particular application behavior.</Description>
       <Copyright/>
       <Packager>Cyril Gambini</Packager>
-      <URL/>
+      <URL>https://github.com/NeosoftTechnologiesInc/LV-WinSCP</URL>
       <Release_Notes>This package allows taking advantage of WinSCP capabilities to perform file transfers between a PC and distant targets.
 Base classes and a DQMH module abstract the WinSCP API and allows easy transfer of files to/from a target.
 This implementation also allows sending non-blocking commands to distant target through SSH.
@@ -44,7 +44,10 @@ v1.0.0 - Original Release
 * Only supports SCP protocol
 * Synchronous file transfer from PC to distant target
 * Synchronous file transfer from distant target to PC
-* Execution of non-blocking commands</Release_Notes>
+* Execution of non-blocking commands
+
+=========================================================================
+https://github.com/NeosoftTechnologiesInc/LV-WinSCP</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -132,9 +135,6 @@ v1.0.0 - Original Release
       <Exclusions>
         <Path>Tests</Path>
       </Exclusions>
-      <Compile_Exclusions>
-        <Path/>
-      </Compile_Exclusions>
       <Place_Folder_Contents>
         <Path/>
       </Place_Folder_Contents>
@@ -252,7 +252,7 @@ v1.0.0 - Original Release
         <Path>..\Low Level API</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E02A9C53593A1A37B64BA0FFC3ECB536</GUID>
+      <GUID>AC99492A91A6BFF498A8068D54C4C95C</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -427,7 +427,7 @@ v1.0.0 - Original Release
         <Path>..\Tester</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C7E69EDEA384917CAF9BD863E563BA22</GUID>
+      <GUID>CBD4C8F3060CDDC6FA568AECCE531CF0</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -462,7 +462,7 @@ v1.0.0 - Original Release
         <Path>..\Session</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>65ACB06F26380675E0F6FEB5D6C70C14</GUID>
+      <GUID>DA760883897DD3B7A0841205F8F185E3</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -497,7 +497,7 @@ v1.0.0 - Original Release
         <Path>..\Libraries\LV-WinSCP\Test LV-WinSCP API.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>83E3EE2F3A90C9E8F334AF4B33C42332</GUID>
+      <GUID>03690549DA6CC11BF470284AB2E8F232</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -602,7 +602,7 @@ v1.0.0 - Original Release
         <Path>..\Classes\Session\Send Items To Target.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>36FF37FA34C409E64B44E7A521BF03B4</GUID>
+      <GUID>8E113C153C48245F124EB0C636612B42</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
