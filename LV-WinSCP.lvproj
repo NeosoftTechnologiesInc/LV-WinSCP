@@ -25,7 +25,9 @@
 			<Item Name="WinSCP.exe" Type="Document" URL="../Bin WinSCP/WinSCP.exe"/>
 			<Item Name="WinSCPnet.dll" Type="Document" URL="../Bin WinSCP/WinSCPnet.dll"/>
 		</Item>
-		<Item Name="VIP" Type="Folder"/>
+		<Item Name="VIP" Type="Folder">
+			<Item Name="LV-WinSCP.vipb" Type="Document" URL="../VIP/LV-WinSCP.vipb"/>
+		</Item>
 		<Item Name="Test-RawAssemblyCalls.vi" Type="VI" URL="../Tests/AssemblyTests/Test-RawAssemblyCalls.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
