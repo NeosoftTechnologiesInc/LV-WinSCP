@@ -59,7 +59,7 @@ Any contribution is welcomed as long as these rules are respected :
 
 ### Open source projects
 
-* WinSCP .NET API : 
+* WinSCP .NET API : https://winscp.net/eng/docs/library
 * DQMH - https://dqmh.org
 
 ## License
