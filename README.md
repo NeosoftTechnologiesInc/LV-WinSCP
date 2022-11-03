@@ -35,11 +35,7 @@ Tell people where they can go to for help. It can be any combination of an issue
 Next steps :
 
 1. Implement asynchronous transfers
-
-2. Support FTP
-
-3. Support SFTP
-
+2. Support SFTP
 4. Support Amazon S3
 
 ## Contributing
