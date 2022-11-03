@@ -13,39 +13,49 @@ Encapsulation of the .NET API is made thanks to LabVIEW classes.</Property>
 	<Item Name="Classes" Type="Folder">
 		<Item Name="Command Execution" Type="Folder">
 			<Item Name="Command Execution.lvclass" Type="LVClass" URL="../CommandExecution/Command Execution.lvclass"/>
+			<Item Name="CommandExecution Class.ctl" Type="VI" URL="../CommandExecution/CommandExecution Class.ctl"/>
 		</Item>
 		<Item Name="FileTransfer" Type="Folder">
 			<Item Name="TransferFiles" Type="Folder">
 				<Item Name="Get" Type="Folder">
+					<Item Name="Get File Class.ctl" Type="VI" URL="../FileTransfer/TransferFiles-Get/Get File Class.ctl"/>
 					<Item Name="TransferFiles-Get.lvclass" Type="LVClass" URL="../FileTransfer/TransferFiles-Get/TransferFiles-Get.lvclass"/>
 				</Item>
 				<Item Name="Put" Type="Folder">
+					<Item Name="Put File Class.ctl" Type="VI" URL="../FileTransfer/TransferFiles-Put/Put File Class.ctl"/>
 					<Item Name="TranferFiles-Put.lvclass" Type="LVClass" URL="../FileTransfer/TransferFiles-Put/TranferFiles-Put.lvclass"/>
 				</Item>
 			</Item>
 			<Item Name="TransferFolder" Type="Folder">
 				<Item Name="Get" Type="Folder">
+					<Item Name="Get Folder Class.ctl" Type="VI" URL="../FileTransfer/TransferFolder-Get/Get Folder Class.ctl"/>
 					<Item Name="TransferFolder-Get.lvclass" Type="LVClass" URL="../FileTransfer/TransferFolder-Get/TransferFolder-Get.lvclass"/>
 				</Item>
 				<Item Name="Put" Type="Folder">
+					<Item Name="Put Folder Class.ctl" Type="VI" URL="../FileTransfer/TransferFolder-Put/Put Folder Class.ctl"/>
 					<Item Name="TransferFolder-Put.lvclass" Type="LVClass" URL="../FileTransfer/TransferFolder-Put/TransferFolder-Put.lvclass"/>
 				</Item>
 			</Item>
 			<Item Name="FileTransfer.lvclass" Type="LVClass" URL="../FileTransfer/FileTransfer.lvclass"/>
 		</Item>
 		<Item Name="FileTransferOptions" Type="Folder">
+			<Item Name="FileTransferOptions Class.ctl" Type="VI" URL="../FileTransferOptions/FileTransferOptions Class.ctl"/>
 			<Item Name="FileTransferOptions.lvclass" Type="LVClass" URL="../FileTransferOptions/FileTransferOptions.lvclass"/>
 		</Item>
 		<Item Name="Session" Type="Folder">
 			<Item Name="Session.lvclass" Type="LVClass" URL="../Session/Session.lvclass"/>
+			<Item Name="SessionClass.ctl" Type="VI" URL="../Session/SessionClass.ctl"/>
 		</Item>
 		<Item Name="SessionOptions" Type="Folder">
 			<Item Name="FTP" Type="Folder">
+				<Item Name="SessionOptions FTP Class.ctl" Type="VI" URL="../SessionOptions/FTP/SessionOptions FTP Class.ctl"/>
 				<Item Name="SessionOptions-FTP.lvclass" Type="LVClass" URL="../SessionOptions/FTP/SessionOptions-FTP.lvclass"/>
 			</Item>
 			<Item Name="SCP" Type="Folder">
+				<Item Name="SessionOptions SCP Class.ctl" Type="VI" URL="../SessionOptions/SCP/SessionOptions SCP Class.ctl"/>
 				<Item Name="SessionOptions-SCP.lvclass" Type="LVClass" URL="../SessionOptions/SCP/SessionOptions-SCP.lvclass"/>
 			</Item>
+			<Item Name="SessionOptions Class.ctl" Type="VI" URL="../SessionOptions/SessionOptions Class.ctl"/>
 			<Item Name="SessionOptions.lvclass" Type="LVClass" URL="../SessionOptions/SessionOptions.lvclass"/>
 		</Item>
 	</Item>
