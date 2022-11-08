@@ -55,6 +55,10 @@ Encapsulation of the .NET API is made thanks to LabVIEW classes.</Property>
 				<Item Name="SessionOptions SCP Class.ctl" Type="VI" URL="../SessionOptions/SCP/SessionOptions SCP Class.ctl"/>
 				<Item Name="SessionOptions-SCP.lvclass" Type="LVClass" URL="../SessionOptions/SCP/SessionOptions-SCP.lvclass"/>
 			</Item>
+			<Item Name="SFTP" Type="Folder">
+				<Item Name="SessionOptions SFTP Class.ctl" Type="VI" URL="../SessionOptions/SFTP/SessionOptions SFTP Class.ctl"/>
+				<Item Name="SessionOptions-SFTP.lvclass" Type="LVClass" URL="../SessionOptions/SFTP/SessionOptions-SFTP.lvclass"/>
+			</Item>
 			<Item Name="SessionOptions Class.ctl" Type="VI" URL="../SessionOptions/SessionOptions Class.ctl"/>
 			<Item Name="SessionOptions.lvclass" Type="LVClass" URL="../SessionOptions/SessionOptions.lvclass"/>
 		</Item>
