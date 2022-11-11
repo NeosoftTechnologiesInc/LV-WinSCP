@@ -1,3 +1,5 @@
+[![Image](https://www.vipm.io/package/neosoft_technologies_lv_winscp/badge.svg?metric=installs)](https://www.vipm.io/package/neosoft_technologies_lv_winscp/) [![Image](https://www.vipm.io/package/neosoft_technologies_lv_winscp/badge.svg?metric=stars)](https://www.vipm.io/package/neosoft_technologies_lv_winscp/)
+
 # LV-WinSCP
 
 This project is a LabVIEW wrapper on top of the WinSCP .NET API.
